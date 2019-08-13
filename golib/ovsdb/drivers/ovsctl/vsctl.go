@@ -11,11 +11,10 @@ import (
 	"github.com/ipaoTAT/tools/golib/ovsdb"
 )
 
-var ErrUnsupport = errors.New("unsupport operation")
-
 type VsCtl struct {
 	LogWriter io.Writer
 	execUtil
+	ovsdb.UnimplementedOvsDB
 }
 
 func (c *VsCtl) Init() error {
@@ -51,14 +50,6 @@ func (c *VsCtl) Set(ctx context.Context, table string, index interface{}, kv map
 		return errors.New(err.Error() + ":" + res)
 	}
 	return nil
-}
-
-func (c *VsCtl) Delete(ctx context.Context, table string, index interface{}) error {
-	return ErrUnsupport
-}
-
-func (c *VsCtl) Insert(ctx context.Context, tables string, kv map[string]interface{}) error {
-	return ErrUnsupport
 }
 
 func (c *VsCtl) convertCondition(cond map[string]interface{}, superKey ...string) []string {
