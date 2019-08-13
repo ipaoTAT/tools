@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/jroimartin/gocui"
 	"github.com/ipaoTAT/tools/golib/tstat"
+	"github.com/jroimartin/gocui"
 	//"math/rand"
-	"time"
 	"math/rand"
+	"time"
 )
 
 var quit chan interface{}

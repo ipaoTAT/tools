@@ -3,10 +3,10 @@ package ovsdb
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"io"
 	"io/ioutil"
 	"sync"
-	"fmt"
 )
 
 type Rows struct {

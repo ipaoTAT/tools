@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/ipaoTAT/tools/golib/ovsdb"
-	"github.com/ipaoTAT/tools/golib/ovsdb/drivers/vsctl"
+	"github.com/ipaoTAT/tools/golib/ovsdb/drivers/ovsctl"
 )
 
 func main() {

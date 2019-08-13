@@ -1,11 +1,12 @@
-package vsctl
+package ovsctl
 
 import (
-	"testing"
-	"github.com/ipaoTAT/tools/golib/ovsdb"
-	"os"
 	"context"
+	"os"
+	"testing"
 	"time"
+
+	"github.com/ipaoTAT/tools/golib/ovsdb"
 )
 
 func TestVsCtl_Query(t *testing.T) {

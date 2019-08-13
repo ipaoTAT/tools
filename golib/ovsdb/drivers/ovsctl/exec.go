@@ -1,4 +1,4 @@
-package vsctl
+package ovsctl
 
 import (
 	"context"

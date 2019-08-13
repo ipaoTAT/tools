@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/jroimartin/gocui"
 	"github.com/ipaoTAT/tools/golib/tstat"
+	"github.com/jroimartin/gocui"
 )
 
 var quit chan interface{}

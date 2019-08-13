@@ -1,13 +1,14 @@
-package vsctl
+package ovsctl
 
 import (
 	"bytes"
 	"context"
 	"errors"
 	"fmt"
-	"github.com/ipaoTAT/tools/golib/ovsdb"
 	"io"
 	"strings"
+
+	"github.com/ipaoTAT/tools/golib/ovsdb"
 )
 
 var ErrUnsupport = errors.New("unsupport operation")

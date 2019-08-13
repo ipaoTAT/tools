@@ -75,6 +75,7 @@ func (w *StatWindow) initBuffer() {
 		w.buf[i] = make([]byte, width, width)
 	}
 }
+
 // function to clean display buffer
 func (w *StatWindow) cleanBuffer() {
 	for i := 0; i < len(w.buf); i++ {
